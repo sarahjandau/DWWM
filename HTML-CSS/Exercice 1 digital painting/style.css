@@ -1,0 +1,46 @@
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  body {
+
+    background-color: #ffffff;
+    font-family: Roboto;
+    margin: 100px 200px; 
+
+  }
+  main{
+    background-color: #FF8500;
+    padding: 30px 100px 50px 100px;
+  }
+
+  h1{
+
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 50px;
+  }
+  h2{
+    color: black;
+  }
+  p{
+    color: #ffffff;
+    font-family: Roboto;
+    
+  }
+  section{
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    color: #615E64;
+    margin-left: 200px;
+    font-style: italic;
+
+  }
+
+   
+div {
+    color: black;
+}
+  
+  
