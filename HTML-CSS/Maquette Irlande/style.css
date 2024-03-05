@@ -1,0 +1,85 @@
+.roboto-regular {
+    font-family: "Roboto", sans serif;
+}
+
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body {
+    background-color: #394a51;
+    font-family: Roboto;
+    width: 960px;
+}
+
+main {
+    
+    background-color: #fbf2d5;
+    width: 960px;
+}
+
+header
+{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+
+h1 {
+    color: #fdcb87;
+    margin-left: 90px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+
+.logo {
+color: #7fa99b;
+margin-left: 90px;
+
+}
+
+span {
+    color: #7fa99b;
+}
+
+p {
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-bottom: 30px;
+}
+
+.irlandais {
+    color: #7fa99b;
+    font-weight: bold;
+}
+.lac {
+    width: 700px 200px;
+    margin-left: 90px;
+    margin-right: 170px;
+}
+
+.foret {
+    width: 700px 200px;
+    margin-left: 90px;
+    margin-right: 170px;
+}
+
+h2 {
+    margin-left: 90px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #7fa99b;
+}
+ul {
+    margin-left: 170px;
+    margin-bottom: 20px;
+}
+
+em {
+   margin: 0px 130px;
+    display: inline-block;
+    border-left: 2px solid gray;
+    
+}
+
