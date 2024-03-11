@@ -1,0 +1,55 @@
+body{
+    background-color: white;
+    margin: 10% 3%;
+    
+}
+header{
+    background-color: orange;
+    width: 100vw;
+    height: 14vw;
+    margin-bottom: 3%;
+    
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    background-color: cadetblue;
+    padding: 4% 3% ;
+    flex: 2;
+    
+}
+    
+.container1{
+    background-color: grey;
+    flex-basis: 20%;
+    height: 40vw;
+}
+
+.container2{
+    flex-basis: 70%;
+    justify-content: space-between;
+}
+
+.item3{
+    background-color: yellow;
+    height: 11vw;
+    margin-bottom:5%;
+
+}
+.item4{
+    background-color: blue;
+    height: 11vw;
+    margin-bottom:5%;
+}
+.item5{
+    background-color: yellowgreen;
+    height: 11vw;
+}
+
+.item6{
+    background-color: green;
+    width: 100vw;
+    height: 14vw;
+    margin-top: 3%;
+}
