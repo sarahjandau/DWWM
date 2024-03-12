@@ -1,0 +1,38 @@
+body {
+  background-color: white;
+  width: 100vw;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 2FR 2FR 2FR;
+  grid-template-rows: 2FR 2FR 2FR 2FR 2FR 2FR;
+  gap: 2%;
+}
+.grid-container header {
+  background-color: red;
+  color: white;
+  grid-area: 1/1/1/6;
+}
+.grid-container .sidebar {
+  background-color: red;
+  color: white;
+  grid-area: 2/1/5/1;
+}
+.grid-container .Box1,
+.grid-container .Box2,
+.grid-container .Box3 {
+  background-color: red;
+  color: white;
+  width: 23vw;
+  height: 23vw;
+}
+.grid-container .Maincontent {
+  background-color: red;
+  color: white;
+  grid-area: 3/2/5/5;
+}
+.grid-container .Footer {
+  background-color: red;
+  color: white;
+  grid-area: 5/1/6/5;
+}
