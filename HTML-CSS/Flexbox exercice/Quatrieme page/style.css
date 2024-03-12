@@ -1,0 +1,50 @@
+body{
+    background-color: white;
+    border: 1vw solid blue;
+    margin: 10% 3%;
+    padding-bottom: 2%;
+    
+}
+header{
+    border: 1vw solid orange;
+    width: 90vw;
+    height: 14vw;
+    margin: 2%;
+    
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    flex-grow: 2;
+    padding: 2% 3% ;
+}
+.container1{
+    flex-basis: 20%;
+    height: 40vw;
+}
+
+.item2, .item3, .item4, .item5, .item6{
+    border: 1vw solid cadetblue;
+    height: 4vw;
+    width: 14vw;
+    margin: 2vw;
+}
+
+.container2{
+    flex-basis: 75%;
+    height: 40vw;
+}
+.item7, .item8, .item9{
+    border: 1vw solid blue;
+    height: 9vw;
+    width: 58vw;
+    margin: 2vw;
+}
+.item10{
+    border: 1vw solid green;
+    width: 100vw;
+    height: 14vw;
+    margin-top: 3%;
+}

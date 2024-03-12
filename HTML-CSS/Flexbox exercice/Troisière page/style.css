@@ -8,7 +8,7 @@ body{
     justify-content: space-around;
     flex-flow: wrap;
     background-color: cadetblue;
-    padding: 4% 3% 30%;
+    padding: 4% 3%;
 }
 .premiercontainer{
     display: flex;
@@ -46,7 +46,7 @@ body{
     background-color: orange;
     flex-basis: 23%;
     height: 12vw;
-    margin-top: 10%;
+    margin-top: 8%;
 
 }
 .troisiemecontainer{
@@ -59,6 +59,12 @@ body{
 .item8, .item9{
     background-color: yellow;
     flex-basis: 46%;
+    margin-top: 3%;
+    height: 10vw;
+}
+.item10{
+    background-color: green;
+    flex-basis: 100%;
     margin-top: 3%;
     height: 10vw;
 }
