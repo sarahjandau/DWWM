@@ -12,50 +12,89 @@ body{
     width: 1440px;
     height: 2643px;
 
-    .menu-container{
-        display: inline-block;
-        position: sticky;
-        position: relative;
-        width: 1440px;
-        height: 60px;
-        background-color: #ECEFD8;
-        font-family: Roboto Condensed;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 18.75px;
-        letter-spacing: 0.23em;
-        text-align: center;
+    main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
 
-        .menu-listing{
-            display: flex;
-            position: absolute;
-            left: 20%;
-            right: 30%;
+        .menu{
+            background-color: #ECEFD8;
+            width: 100%;
+            height: 60px;
+            display: flex; 
+            justify-content: space-evenly; 
             align-items: center;
-            justify-content: space-between;
-            flex-direction: row;
-            text-decoration: none;
-            list-style-type: none;
+            
+            .menu-listing{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                gap: 2vw;
+                font-size: 16px;
+                font-weight: 300;
+                width: 100%;
+                line-height: 10px;
+                letter-spacing: 5px;
+                list-style: none; 
 
-            li{
-                padding-top: 1vw;
+            }
+    
+        }
+        header{
+            background-image: url("/images/expodelogo.png"), url("/images/headerexpode.jpg");
+            background-size: auto, cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 400px;
+            width: 100%;
+            position: relative;
 
-            a{
-                text-decoration: none;
-                color: black;
+            .description{
+                position: absolute;
+                top: 70%;
+                left: 34%;
+                text-align: center;
+                font-size: 24px;
+                font-weight: 400;
+                color: white;
+                display: inline-block;
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
+                letter-spacing: 4px;
+            }
+        }
+        .bienvenue{
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: center; 
+            align-items: center;
+            height: 440px;
+            width: 1440px;
+            background-color: #ECEFD8;
+
+            p:nth-child(1){
+                font-weight: 700;
+                font-size: 30px;
+                color: #393939;
+                text-align: center;
+                padding-top: 56px;
+                flex-grow: 1 ;
+
+            }
+
+            p:nth-child(2){
+                font-weight: 300;
+                font-size: 20px;
+                width: 640px;
+                color: #191A18;
+                text-align: center;
+                flex-grow: 1;
             }
             
-            }
 
         }
-    }
-    header{
-        width: 100%;
-        height: 440px;
-        background-image: url("/images/headerexpode.jpg"), url("/images/expodelogo.png");
-        background-size: 100%;
-    }
+          
+        }
 
     
-}
-    
+    }      
