@@ -1,100 +1,40 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-
-body{
-    font-family:"Roboto Condensed", sans-serif;
-    font-weight: weight;
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 300;
     font-style: normal;
-    width: 1440px;
-    height: 2643px;
+  }
+  
+  main {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  nav{
+    background-color: #ecefde;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 1%;
+  }
+  
+  header{
+    height: 400px;
+    background-image: url(/images/expodelogo.png), url(/images/headerexpode.jpg);
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
-    main{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-
-        .menu{
-            background-color: #ECEFD8;
-            width: 100%;
-            height: 60px;
-            display: flex; 
-            justify-content: space-evenly; 
-            align-items: center;
-            
-            .menu-listing{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                gap: 2vw;
-                font-size: 16px;
-                font-weight: 300;
-                width: 100%;
-                line-height: 10px;
-                letter-spacing: 5px;
-                list-style: none; 
-
-            }
-    
-        }
-        header{
-            background-image: url("/images/expodelogo.png"), url("/images/headerexpode.jpg");
-            background-size: auto, cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 400px;
-            width: 100%;
-            position: relative;
-
-            .description{
-                position: absolute;
-                top: 70%;
-                left: 34%;
-                text-align: center;
-                font-size: 24px;
-                font-weight: 400;
-                color: white;
-                display: inline-block;
-                border-top: 1px solid white;
-                border-bottom: 1px solid white;
-                letter-spacing: 4px;
-            }
-        }
-        .bienvenue{
-            display: flex; 
-            flex-wrap: wrap;
-            justify-content: center; 
-            align-items: center;
-            height: 440px;
-            width: 1440px;
-            background-color: #ECEFD8;
-
-            p:nth-child(1){
-                font-weight: 700;
-                font-size: 30px;
-                color: #393939;
-                text-align: center;
-                padding-top: 56px;
-                flex-grow: 1 ;
-
-            }
-
-            p:nth-child(2){
-                font-weight: 300;
-                font-size: 20px;
-                width: 640px;
-                color: #191A18;
-                text-align: center;
-                flex-grow: 1;
-            }
-            
-
-        }
-          
-        }
-
-    
-    }      
+    p{
+        top:150px;
+    }
+  }
