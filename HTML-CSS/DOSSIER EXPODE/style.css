@@ -38,10 +38,9 @@ header {
 }
 header h1 {
   position: absolute;
-  position: sticky;
-  top: 70%;
-  left: 30%;
   text-align: center;
+  top: 70%;
+  left: 35%;
   font-size: 24px;
   font-weight: 400;
   color: white;
@@ -115,7 +114,7 @@ header h1 {
   display: block;
   width: 252px;
   height: 404px;
-  background-color: #9AB464;
+  background-color: #849561;
   color: white;
   position: relative;
   z-index: 1;
@@ -156,7 +155,7 @@ h2{
   display: block;
   width: 252px;
   height: 404px;
-  background-color: #9AB464;
+  background-color: #849561;
   color: white;
   position: relative;
   z-index: 1;
@@ -166,7 +165,8 @@ h2{
   display: block;
   width: 252px;
   height: 404px;
-  background-color: #9AB464;
+  background-color: #849561
+  ;
   color: white;
   position: relative;
   z-index: 1;
@@ -176,7 +176,7 @@ h2{
   display: block;
   width: 252px;
   height: 404px;
-  background-color: #9AB464;
+  background-color: #849561 ;
   color: white;
   position: relative;
   z-index: 1;
@@ -259,7 +259,7 @@ h2{
   position: relative;
 }
 
-.container2 img{
+.photo{
   border-radius: 50%;
   margin-top: -50px; 
   z-index: 2;
@@ -278,12 +278,67 @@ h2{
 
 .socialmedia {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
   justify-content: flex-start;
-  display: block;
-  background-color: #393939;
+  padding-left: 15px;
+
 }
+.logo1{
+
+  width: 25px;
+  height: 25px;
+  background-color: #393939;
+  background-image: url(/images/Google+.png);
+  background-position: 15px;
+  background-repeat: no-repeat;
+  padding: 10px;
+  border: 48px 49px;
+}
+.logo2{
+  width: 25px;
+  height: 25px;
+  background-color: #393939;
+  background-image: url(/images/Twitter.png);
+  background-repeat: no-repeat;
+  background-position: 15px;
+  padding: 10px;
+  border: 48px 49px;
+}
+.logo3{
+  width: 25px;
+  height: 25px;
+  background-color: #393939;
+  background-image: url(/images/Facebook.png);
+  background-repeat: no-repeat;
+  background-position: 15px;
+  border: 48px 49px;
+  padding: 10px;
+
+
+}
+
+.pbradley p:nth-child(1){
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  padding-left: 3%;
+  border-top: 1px solid white;
+}
+.pbradley p:nth-child(2){
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  width: 420px;
+  padding-left: 3%;
+  text-align: justify;
+}
+
 
 .laura{
   display: block;
@@ -293,5 +348,94 @@ h2{
   color: white;
   position: relative;
   z-index: 1;
+
+}
+.plaura p:nth-child(1){
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  padding-left: 3%;
+  border-top: 1px solid white;
+}
+.plaura p:nth-child(2){
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  width: 420px;
+  padding-left: 3%;
+  text-align: justify;
+}
+
+@media screen and (max-width:768px) {
+
+  .container{
+    padding-bottom: 10%;
+  }
+
+  .nympheas{
+    color: white;
+    background-image: none;
+    background-color: #1D1B1BFC;
+    color: white;
+    padding-top: 100px;
+  }
+  .paragraphenympheas{
+    padding: 3%;
+  }
+
+  .fondateurs{
+    padding-top: 30px;
+    height: 798px;
+  }
+  .container2{
+    gap: 10px;
+    max-width: 100%;
+  }
+
+  .bradley {
+    width: 300px;
+    height: 510px;
+  }
+  .laura {
+    width: 300px;
+    height: 510px;
+  }
+  .pbradley p:nth-child(2){
+    width: 260px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 19px;
+  }
+  .laura p:nth-child(2){
+    width: 260px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 19px;
+  }
+  
+
+  .logo1{
+  
+    width: 25px;
+    height: 25px;
+  }
+  .logo2{
+    width: 25px;
+    height: 25px;
+  }
+  .logo3{
+    width: 25px;
+    height: 25px;
+  
+  }
+  .photo{
+    width: 137px;
+    height: 135px;
+  }
+
 
 }
