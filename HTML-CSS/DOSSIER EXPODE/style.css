@@ -33,7 +33,7 @@ header {
   background-position: center;
   position: relative;
 }
-header p {
+header h1 {
   position: absolute;
   position: sticky;
   top: 70%;
@@ -85,18 +85,54 @@ header p {
   background-color: #393939;
   height: 560px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
 }
 .encemoment p:nth-child(1){
   color: #849561;
   font-weight: 700;
   font-size: 22px;
-  line-height: 26,11px;
-  letter-spacing: 15,5%;
+  line-height: 26px;
+  text-align: center;
+  max-width: 1440px;
+}
+.container{
   display: flex;
-  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.ishibashi{
+  display: block;
+  width: 252px;
+  height: 404px;
+  background-color: #9AB464;
+  color: white;
+  position: relative;
+  
 
+}
+h2{
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.paragraphe{
+  font-weight: 400;
+  font-size: 14px;
+  /* width: 147px;
+  height: 45px; */
+  position: absolute;
+  text-align: center;
+  left: 20%;
+  right: 20%;
+}
+.boutons{
+  background-color: #393939;
+  color: #9AB464;
+  width: 145px;
+  height: 42px;
+  top: 200px;
 }
 
   
