@@ -318,7 +318,6 @@ h2{
   border: 48px 49px;
   padding: 10px;
 
-
 }
 
 .pbradley p:nth-child(1){
@@ -374,6 +373,14 @@ h2{
     padding-bottom: 10%;
   }
 
+  .ishibashi {
+    margin-bottom: 5%;
+  }
+
+  .anxiety{
+    margin-bottom: 5%;
+  }
+
   .nympheas{
     color: white;
     background-image: none;
@@ -386,12 +393,13 @@ h2{
   }
 
   .fondateurs{
-    padding-top: 30px;
+    padding-top: 5%;
     height: 798px;
   }
   .container2{
     gap: 10px;
     max-width: 100%;
+    margin-top: 6%;
   }
 
   .bradley {
