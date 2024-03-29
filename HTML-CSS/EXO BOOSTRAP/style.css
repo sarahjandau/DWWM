@@ -5,3 +5,8 @@
 video{
     object-fit: cover;
 }
+
+.month{
+    font-size: small;
+    font-weight:300;
+}
