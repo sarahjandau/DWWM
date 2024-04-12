@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dragons Dynasty</title>
+</head>
+<body>
+    <section id="accueil" class="accueil">
+        
+        <div class="header">
+            <div class="logo"> </div>
+            <button id="jouer" class="jouer"> Jouer </button>
+            <button id="ouvrirModal"> Comment jouer? </button>
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1> Règles du jeu</h1>
+                    <p> Dragons Dynasty est un jeu de stratégie au tour par tour où les joueurs contrôlent 
+                        des dragons pour conquérir des territoires et vaincre les autres joueurs. 
+                    </p>
+                    <h3>Sélection du dragon : </h3>
+                    <p> Chaque joueur commence avec un dragon de base.</p>
+                    <br>
+                    <h3>Tours par tours : </h3>
+                    <p> Le jeu se déroule en tours. Pendant chaque tour, les joueurs peuvent effectuer une action (attaquer ou utiliser une compétence spéciale).</p>
+                    <br>
+                    <h3>Combat </h3>
+                    <p>Le vainqueur est déterminé en fonction de son nombre de vie.</p>
+                    <br>
+                    <h3>Victoire</h3>
+                    <p> Le joueur qui parvient à éliminer les dragons des autres joueurs remporte la partie.</p>
+                    <br>
+                </div>
+            </div>
+        </div>   
+         
+    </section>  
+
+    <section id="selectCharacter" class="selectCharacter">
+        <h1>Selection des personnages</h1>
+        <div class="selectPlayer1Player2">
+
+            <div class="selectCharacterPlayer1">
+                <img src="./images/SARAH.jpg" class="imgSelectPlayer1 player1Sarah" alt="">
+                <img src="./images/EMY.jpg" class="imgSelectPlayer1 player1Emy" alt="">
+                <img src="./images/REMY.jpg" class="imgSelectPlayer1 player1Remy" alt="">
+                <img src="./images/THOMAS.jpg" class="imgSelectPlayer1 player1Thomas" alt="">
+                <img src="./images/GAETAN.png" class="imgSelectPlayer1 player1Gaetan" alt="">
+                <!-- <img src="./images/AXEL.jpg" class="imgSelectPlayer1 player1Axel" alt="">
+                <img src="./images/ETHAN.jpg" class="imgSelectPlayer1 player1Ethan" alt="">
+                <img src="./images/CELINE.jpg" class="imgSelectPlayer1 player1Celine" alt="">
+                <img src="./images/ROMAIN.jpg" class="imgSelectPlayer1 player1Romain" alt="">
+                <img src="./images/MARVIN.jpg" class="imgSelectPlayer1 player1Marvin" alt="">
+                <img src="./images/BERANGER.jpg" class="imgSelectPlayer1 player1Beranger" alt="">
+                <img src="./images/MATTHIAS.jpg" class="imgSelectPlayer1 player1Mathias" alt=""> -->
+
+                
+            </div>
+            <div class="selectCharacterPlayer2">
+                <img src="./images/SARAH.jpg" class="imgSelectPlayer1 player2Sarah" alt="">
+                <img src="./images/EMY.jpg" class="imgSelectPlayer2 player2Emy" alt="">
+                <img src="./images/REMY.jpg" class="imgSelectPlayer2 player2Remy" alt="">
+                <img src="./images/THOMAS.jpg" class="imgSelectPlayer2 player2Thomas" alt="">
+                <img src="./images/GAETAN.png" class="imgSelectPlayer2 player2Gaetan" alt="">
+                <!-- <img src="./images/AXEL.jpg" class="imgSelectPlayer1 player2Axel" alt="">
+                <img src="./images/ETHAN.jpg" class="imgSelectPlayer1 player2Ethan" alt="">
+                <img src="./images/CELINE.jpg" class="imgSelectPlayer1 player2Celine" alt="">
+                <img src="./images/ROMAIN.jpg" class="imgSelectPlayer1 player2Romain" alt="">
+                <img src="./images/MARVIN.jpg" class="imgSelectPlayer1 player2Marvin" alt="">
+                <img src="./images/BERANGER.jpg" class="imgSelectPlayer1 player2Beranger" alt="">
+                <img src="./images/MATTHIAS.jpg" class="imgSelectPlayer1 player2Mathias" alt=""> -->
+                
+            </div>
+        </div>
+            <button class="btnStartBattle" id="btnStartBattle">Start Battle</button>
+    </section>
+
+
+    <section class="Battle" id="Battle">
+        <h1>Le combat</h1>
+        <div class="battlePlayer1Player2">
+            <div class="battlePlayer1">
+                <h2 class="namePersonnage1">Nom du personnage 1</h2>
+                <img src="" class="imgPerso1" alt="">
+                <button class="atk1">Attaquer</button>
+                <p id="viePlayer1">Vie : 100</p>
+                <div id="lifebar">
+                  <div id="status">
+                    
+                  </div>
+                </div>
+            </div>
+            <div class="battlePlayer2">
+                <h2 class="namePersonnage2">nom du personnage 2</h2>
+                <img src="" class="imgPerso2" alt="">
+                <button class="atk2">Attaquer</button>
+                <p id="viePlayer2">Vie : 100</p>
+                <div id="lifebar">
+                  <div id="status">
+                    
+                  </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <script src="script.js"> </script> 
+        
+        
+</body>
+</html>
+
