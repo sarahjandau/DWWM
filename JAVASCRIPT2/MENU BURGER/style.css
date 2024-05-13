@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#nav{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    font-size: calc(0.5rem + 1.5vw);
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li{
+    list-style: none;
+}
+
+#menuburger{
+    display: none;
+    background-color: aquamarine;
+    height: 30vh;
+}
+
+#menuburger{
+    display: none;
+}
+
+@media (max-width: 650px) {
+    #burger {
+        display: block;
+        
+    }
+    #burger:before {
+        content: "\2630";
+    }
+
+    .active #burger:before{
+        content: "\2613";
+    }
+
+    .nav ul{
+        display: none;
+    }
+
+    #menuburger{
+        display: none;
+    }
+
+
+}
