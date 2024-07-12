@@ -56,8 +56,8 @@ class User{
         }
 
         try {
-            $stmt = $pdo->prepare('UPDATE Users SET nom = ?, prenom = ?, email = ?, telephone = ?, image = ? WHERE id = ?');
-            $stmt->execute([$nom, $prenom, $email, $telephone, $id, $image_name]);
+            $stmt = $pdo->prepare('UPDATE Users SET nom = ?, prenom = ?, email = ?, telephone = ?, image_name = ? WHERE id = ?');
+            $stmt->execute([$nom, $prenom, $email, $telephone, $image_name, $id]);
 
             $stmt = $pdo->prepare('UPDATE UserRoles SET role = ? WHERE user_id = ?');
             $stmt->execute([$role, $id]);

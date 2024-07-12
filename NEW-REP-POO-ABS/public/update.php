@@ -5,7 +5,7 @@ require_once dirname(__DIR__). '/entities/User.class.php';
 
 Auth::verifyAdmin();
 
-if (isset($_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['telephone'], $_POST['password'], $_POST['role']) && isset($_FILES['image'])) {
+if (isset($_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['telephone'], $_POST['role']) && isset($_FILES['image'])) {
     $id = $_POST['id'];
     $nom = $_POST['nom'];
     $prenom = $_POST['prenom'];
@@ -33,7 +33,7 @@ if (isset($_GET['id'])) {
 
 <div class="form-container">
     <?php if ($user) : ?>
-        <form method="POST">
+        <form method="POST" enctype="multipart/form-data" >
             <input type="hidden" name="id" value="<?php echo htmlspecialchars($user['id']); ?>">
             <label for="nom">Nom:</label>
             <input type="text" name="nom" value="<?php echo htmlspecialchars($user['nom']); ?>" required><br>
