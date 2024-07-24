@@ -1,5 +1,4 @@
 <?php
-
 require_once dirname(__DIR__). '/dbConnect/MyDbConnection.php';
 
 class Auth {
@@ -10,8 +9,8 @@ class Auth {
     }
 
     public static function isAdmin($id_user) {
-        $pdo = MyDbConnection::getInstance(); 
-        $stmt = $pdo->prepare('SELECT role FROM user WHERE id_user= ?');
+        $pdo = MyDbConnection::getInstance()->getPdo(); 
+        $stmt = $pdo->prepare('SELECT role FROM user WHERE id_user = ?');
         $stmt->execute([$id_user]);
         $userRole = $stmt->fetch();
         return $userRole && $userRole['role'] === 'admin';
@@ -23,7 +22,7 @@ class Auth {
             echo "Session utilisateur non définie.";
             exit();
         } else {
-            $userId = $_SESSION['id_user'];
+            $id_user = $_SESSION['id_user']; // Utilisation correcte de $id_user
             if (!self::isAdmin($id_user)) {
                 echo "L'utilisateur avec l'ID $id_user n'est pas un administrateur.";
                 exit();
@@ -31,3 +30,5 @@ class Auth {
         }
     }
 }
+?>
+

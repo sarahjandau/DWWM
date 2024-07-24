@@ -1,0 +1,470 @@
+
+body {
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white;
+  
+}
+
+table img {
+  max-width: 100px;
+}
+
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('/public/img/waterpoloheader.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+}
+
+
+.header-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  li {
+    margin: 10px 20px;
+    border-radius: 100px;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 8px;
+    font-weight: 300px;
+    border: 1px solid #ffffff;
+    padding: 5px 20px 5px 20px; 
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+  }
+}
+
+.menuburger{
+  display: none;
+}
+
+// Style pour le logo
+.logo {
+  background-image: url('/public/img/LOGOJO.svg');
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 12vh;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  filter: brightness(0) invert(1);
+}
+
+// Style pour le titre principal
+h1 {
+  margin: 0;
+  font-size: 4vh;
+  line-height: 1.2;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  text-align: left;
+}
+
+// Styles pour la section principale (main)
+main {
+  padding: 20px;
+}
+
+// SECTION 1
+
+.section1{
+    width: 297px;
+    height: 623px;
+  }
+  
+  .section1 .section-wrapper {
+    height: 623px;
+  }
+  
+  .section1 .div {
+    position: relative;
+    width: 1200px;
+    height: 623px;
+  }
+  
+  .section1 .calendrierMatch {
+    position: absolute;
+    width: 273px;
+    top: 0;
+    left: 4px;
+    font-family: "Fira Sans-Black", Helvetica;
+    font-weight: 900;
+    color: #2eb2e1;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .section1 .CARD-CONTAINER {
+    position: absolute;
+    width: 305px;
+    height: 306px;
+    top: 133px;
+    left: 0;
+  }
+  
+  .section1 .overlap-group {
+    position: relative;
+    width: 297px;
+    height: 306px;
+    background-color: #fbf9f9;
+    border-top-width: 20px;
+    border-top-style: solid;
+    border-color: #b1e3fe;
+    box-shadow: 0px 4px 4px #00000040;
+  }
+  
+  .section1 .ESPAGNE{
+    position: absolute;
+    width: 46px;
+    height: 61px;
+    top: 51px;
+    left: 30px;
+    object-fit: cover;
+  }
+  
+  .section1 .FRANCE{
+    position: absolute;
+    width: 45px;
+    height: 61px;
+    top: 51px;
+    left: 182px;
+    object-fit: cover;
+  }
+  
+  .section1 .TITRE-FRANCE{
+    position: absolute;
+    width: 103px;
+    top: 137px;
+    left: 167px;
+    font-family: "Fira Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .section1 .TITRE-ESPAGNE{
+    position: absolute;
+    width: 103px;
+    top: 137px;
+    left: 9px;
+    font-family: "Fira Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .section1 .overlap{
+    position: absolute;
+    width: 250px;
+    height: 87px;
+    top: 204px;
+    left: 26px;
+  }
+  
+  .section1 .DATE-MATCH{
+    position: absolute;
+    width: 247px;
+    top: 29px;
+    left: 0;
+    font-family: "Fira Sans Condensed-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .section1 .CATEGORIES-MATCH{
+    position: absolute;
+    width: 247px;
+    top: 0;
+    left: 3px;
+    font-family: "Fira Sans Condensed-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .section1 .LIGNE-SEPARATION{
+    position: absolute;
+    width: 2px;
+    height: 110px;
+    top: 47px;
+    left: 129px;
+    object-fit: cover;
+  }
+  
+  .section1 .bouton {
+    position: absolute;
+    width: 181px;
+    height: 54px;
+    top: 569px;
+    left: 63px;
+  }
+  
+  .section1 .div-wrapper {
+    position: relative;
+    width: 179px;
+    height: 54px;
+    background-color: #ddc706;
+    border-radius: 200px;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  
+  .section1 .text-wrapper-2 {
+    position: absolute;
+    width: 110px;
+    top: 13px;
+    left: 37px;
+    font-family: "Fira Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #fffff5;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+}
+
+// TEMPLATE CRUD 
+
+.containerMenuCrud {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: #25A1CD;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  position: relative;
+
+  .menuHeader {
+    padding-top: 10px;
+    img {
+      width: 15vh;
+      height: 25vh;
+    }
+  }
+
+  .menuNavigation {
+    width: 100%;
+    height: 100vh;
+    padding-left: 10vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  
+    ul {
+      list-style: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      color: white;
+  
+      li {
+        margin: 20px 0;
+  
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 18px;
+          display: flex;
+          align-items: left;
+          justify-content: left;
+          padding: 5px;
+  
+          &:link,
+          &:visited,
+          &:hover,
+          &:active {
+            color: white;
+          }
+  
+          &:before{
+            content: '🏐';
+            margin-right: 10px;
+            color: yellow; 
+          }
+        }
+      }
+    }
+    .adminSection {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+  
+      .adminButton {
+        background-color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+    }
+  }
+  
+
+}
+
+.contentCrud{
+  padding: 40px;
+  flex-grow: 2;
+}
+
+
+
+// PAGE LOGIN
+
+.containerLogin {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  .imageLogin, .containerConnexion{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageLogin {
+    background-image: url('/public/img/pagelogin.jpg'); 
+    background-size: cover;
+    background-position: center;
+  }
+
+  
+  .containerConnexion{
+    
+    .logoJO{
+      padding: 30px;
+      
+    }
+
+    h2{
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 800;
+      font-style: extra-bold;
+    }
+    form {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+
+      label {
+        margin-top: 10px;
+      }
+
+      input[type="submit"] {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: 768px) {
+
+  .contentCrud{
+    padding-left: 300px;
+  }
+  .containerCrud {
+    flex-direction: row;
+  }
+
+  .containerMenuCrud{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+  }
+
+  .main{
+    margin-left: 500px;
+  }
+
+  .menuHeader{
+    img{
+      width: 50vh;
+      height: 50vh;
+      }
+  }
+  
+}
